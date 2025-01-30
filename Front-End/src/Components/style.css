@@ -1,0 +1,75 @@
+.loginPage {
+    background: url('Images/image.png');
+    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)), url("Images/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.loginForm {
+    background-color: rgba(179, 197, 231, 0.6);
+    color: white;
+}
+
+ul li :hover {
+    background-color: gray;
+}
+
+.employee_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.emp_det_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.sidebar {
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link {
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(244, 114, 114, 0.1);
+}
+
+.sidebar .brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.sidebar .nav-link i {
+  font-size: 1.25rem;
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
