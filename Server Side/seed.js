@@ -36,7 +36,7 @@ const seedAdmin = async () => {
         "admin",
         "Default Address",
         0,
-        null,  // ✅ Fix: Adding NULL for profile_image
+        null,  
         1,
       ]);
       console.log("✅ Admin user seeded into employee table.");

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import "./style.css";
 import axios from "axios";
@@ -14,7 +12,7 @@ const Login = () => {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  axios.defaults.withCredentials = true; 
+  axios.defaults.withCredentials = true;
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -23,9 +21,13 @@ const Login = () => {
     console.log("Submitting:", values);
 
     try {
-      const response = await axios.post("http://localhost:3000/auth/adminlogin", values, {
-        withCredentials: true,
-      });
+      const response = await axios.post(
+        "http://localhost:3000/auth/adminlogin",
+        values,
+        {
+          withCredentials: true,
+        }
+      );
 
       console.log("Server Response:", response.data);
 
@@ -68,7 +70,9 @@ const Login = () => {
               type="password"
               name="password"
               placeholder="Enter Password"
-              onChange={(e) => setValues({ ...values, password: e.target.value })}
+              onChange={(e) =>
+                setValues({ ...values, password: e.target.value })
+              }
               className="form-control rounded-0"
             />
           </div>

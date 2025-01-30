@@ -59,7 +59,7 @@ const Dashboard = () => {
                   className="nav-link px-0 align-middle text-white"
                 >
                   <i className="fs-4 bi-columns ms-2"></i>
-                  <span className="ms-2 d-none d-sm-inline">Category</span>
+                  <span className="ms-2 d-none d-sm-inline">Position</span>
                 </Link>
               </li>
               <li className="w-100">
@@ -86,7 +86,6 @@ const Dashboard = () => {
             <div className="p-2 d-flex justify-content-center shadow">
                 <h4>Emoployee Management System</h4>
             </div>
-            
             <Outlet />
         </div>
       </div>

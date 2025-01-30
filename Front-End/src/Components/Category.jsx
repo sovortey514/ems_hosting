@@ -21,10 +21,10 @@ const Category = () => {
   return (
     <div className="px-5 mt-3">
       <div className="d-flex justify-content-center">
-        <h3>Category List</h3>
+        <h3>Position List</h3>
       </div>
       <Link to="/dashboard/add_category" className="btn btn-outline-success">
-        +Add Category
+        +Add Position
       </Link>
       <div className="mt-3">
         <table className="table">
@@ -42,7 +42,7 @@ const Category = () => {
                   <div className="d-flex justify-content-center gap-2">
                     <Link
                       to={`/dashboard/edit_category/${c.id}`}
-                      className="btn btn-outline-primary btn-sm d-flex align-items-center"
+                      className="btn btn-outline-success btn-sm d-flex align-items-center"
                       style={{
                         display: "flex",
                         alignItems: "center",
@@ -52,8 +52,6 @@ const Category = () => {
                     >
                       <FaEdit size={12} /> Edit
                     </Link>
-
-                    {/* Delete Button */}
                     <button
                       className="btn btn-outline-danger btn-sm d-flex align-items-center"
                       onClick={() => handleDelete(c.id)}
